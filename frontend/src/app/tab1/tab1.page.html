@@ -1,17 +1,24 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <h6>Ionic Bootstrap Tabs</h6>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <tabset>
+
+    <!-- Tab 1 -->
+    <tab heading="Tab 1" id="tab1">
+      Tab Content 1
+    </tab>
+
+    <!-- Tab 2 -->
+    <tab heading="Tab 2">
+      Tab Content 2
+    </tab>
+
+    <!-- Tab 3 -->
+    <tab heading="Tab 3">
+      Tab Content 3
+    </tab>
+
+  </tabset>
+
 </ion-content>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,15 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  
+  model: NgbDateStruct;
+  date: {year: number, month: number};
+  show = true;
+
+  constructor(private calendar: NgbCalendar) {}
+
+  selectToday() {
+    this.model = this.calendar.getToday();
+  }
 
 }
